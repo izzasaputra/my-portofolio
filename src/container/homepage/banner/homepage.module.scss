@@ -10,6 +10,10 @@
     height: 90vh;
   }
 
+  @include tablet {
+    height: 90vh;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -36,6 +40,10 @@
   padding-left: 40px;
   @include phone-screen {
     padding-left: 20px;
+    height: 90vh;
+  }
+
+  @include tablet {
     height: 90vh;
   }
 }
