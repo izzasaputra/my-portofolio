@@ -3,11 +3,25 @@ import React from "react";
 import styles from "./homepage.module.scss";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "antd";
-import { LinkedinOutlined, InstagramOutlined, GithubOutlined } from "@ant-design/icons";
+import {
+  LinkedinOutlined,
+  InstagramOutlined,
+  GithubOutlined,
+} from "@ant-design/icons";
+import { motion } from "framer-motion";
 
 export default function Banner() {
   return (
-    <div className={`${styles.banner} ${styles.shadow} `}>
+    <motion.div
+      className={styles.banner}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 3,
+        ease: "easeInOut",
+        type: "spring",
+      }}
+    >
       <div className={styles.content_wrapper}>
         <div className={styles.type_animation_container}>
           <div className={styles.name}>
@@ -32,17 +46,20 @@ export default function Banner() {
           <Button className={styles.resume_button}>Resume</Button>
         </div>
         <div className={styles.social_media_container}>
-          <div style={{marginRight:'10px'}} className={styles.media_item}>
+          <div style={{ marginRight: "10px" }} className={styles.media_item}>
             <LinkedinOutlined />
           </div>
           <div>
-            <InstagramOutlined style={{marginRight:'10px'}} className={styles.media_item}/>
+            <InstagramOutlined
+              style={{ marginRight: "10px" }}
+              className={styles.media_item}
+            />
           </div>
           <div>
-            <GithubOutlined className={styles.media_item}/>
+            <GithubOutlined className={styles.media_item} />
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

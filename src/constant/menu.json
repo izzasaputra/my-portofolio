@@ -1,0 +1,8 @@
+{
+    "Menus" : [
+        { "title": "Home", "link": "www.google.com" },
+        { "title": "About", "link": "www.google.com" },
+        { "title": "Portofolio", "link": "www.google.com" },
+        { "title": "Contact", "link": "www.google.com" }
+    ]
+}

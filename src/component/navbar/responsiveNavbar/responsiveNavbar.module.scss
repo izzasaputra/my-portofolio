@@ -1,0 +1,47 @@
+.navbar_container {
+  position: fixed;
+  z-index: 100;
+  color: white;
+  padding: 20px;
+  height: 50px;
+  width: 100vw;
+  transition: 0.5s ease;
+  .detail_menu {
+    display: flex;
+    .menu_item {
+      margin-right: 50px;
+      cursor: pointer;
+    }
+    .menu_item:hover {
+      font-weight: 600;
+    }
+  }
+}
+
+.hamburger_menu_icon {
+  z-index: 200;
+  position: absolute;
+}
+
+.background_menu {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  z-index: 90;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 100px 0;
+}
+
+.menu_item {
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.menu_link {
+  color: white !important;
+  text-decoration: none;
+}

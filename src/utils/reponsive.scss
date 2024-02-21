@@ -1,0 +1,33 @@
+// Breakpoints for mobile and tablet
+$mobile: 576px;
+$tablet: 768px;
+
+// Center content horizontally and vertically
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Clearfix mixin
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Mixin for phone screens
+@mixin phone-screen {
+  @media only screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+// Mixin for tablets
+@mixin tablet {
+  @media only screen and (min-width: ($mobile + 1)) and (max-width: $tablet) {
+    @content;
+  }
+}

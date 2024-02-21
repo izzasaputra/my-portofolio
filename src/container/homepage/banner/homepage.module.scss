@@ -1,3 +1,5 @@
+@import "../../../utils//reponsive.scss";
+
 .banner {
   background-image: url("../../../../public/image/banner.jpg");
   color: white;
@@ -28,6 +30,9 @@
   z-index: 10;
   height: 100vh;
   padding-left: 40px;
+  @include phone-screen {
+    padding-left: 20px;
+  }
 }
 
 .type_animation_container {
