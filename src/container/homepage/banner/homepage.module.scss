@@ -6,6 +6,10 @@
   height: 100vh;
   background-size: cover;
 
+  @include phone-screen {
+    height: 95vh;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -28,7 +32,7 @@
   display: block;
   position: relative;
   z-index: 10;
-  height: 100vh;
+  height: 95vh;
   padding-left: 40px;
   @include phone-screen {
     padding-left: 20px;
@@ -79,7 +83,7 @@
 
 .social_media_container {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   font-size: 30px;
   display: flex;
 }
