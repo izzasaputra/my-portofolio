@@ -11,7 +11,7 @@ import {
 import { motion } from "framer-motion";
 
 export default function Banner() {
-  return (
+    return (
     <motion.div
       className={styles.banner}
       initial={{ opacity: 0 }}
@@ -39,7 +39,6 @@ export default function Banner() {
                 "Fullstack Developer",
               ]}
               speed={1}
-              style={{ fontSize: "30px" }}
               repeat={Infinity}
             />
           </div>
