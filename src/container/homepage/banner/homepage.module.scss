@@ -7,7 +7,7 @@
   background-size: cover;
 
   @include phone-screen {
-    height: 95vh;
+    height: 90vh;
   }
 
   &::before {
@@ -36,7 +36,7 @@
   padding-left: 40px;
   @include phone-screen {
     padding-left: 20px;
-    height: 95vh;
+    height: 90vh;
   }
 }
 
@@ -84,7 +84,7 @@
 
 .social_media_container {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   font-size: 30px;
   display: flex;
 }
