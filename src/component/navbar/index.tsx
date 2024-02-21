@@ -4,6 +4,7 @@ import styles from "./navbar.module.scss";
 import useResponsive from "@/hooks/responsive";
 import ResponsiveNavbar from "./responsiveNavbar";
 import Menu from "../../constant/menu.json";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +25,15 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 3,
+        ease: "easeInOut",
+        type: "spring",
+      }}
+    >
       {screenType.mobile ? (
         <ResponsiveNavbar />
       ) : (
@@ -41,6 +50,6 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }

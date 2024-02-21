@@ -33,13 +33,15 @@ export default function ResponsiveNavbar() {
       </div>
       {isOpen && (
         <div className={styles.background_menu}>
-          {menus.map((menu) => (
-            <div key={menu.title} className={styles.menu_item}>
-              <Link href={menu.link} className={styles.menu_link}>
-                {menu.title}
-              </Link>
-            </div>
-          ))}
+          <div className={styles.menu_wrapper}>
+            {menus.map((menu) => (
+              <div key={menu.title} className={styles.menu_item}>
+                <Link href={menu.link} className={styles.menu_link}>
+                  {menu.title}
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>

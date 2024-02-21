@@ -32,7 +32,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 100px 0;
+}
+
+.menu_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .menu_item {
