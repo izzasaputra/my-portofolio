@@ -1,0 +1,41 @@
+@import "../../../utils/reponsive.scss";
+
+.wrapper {
+  padding: 0 40px;
+  @include phone-screen {
+    padding: 0 20px;
+  }
+}
+
+.row_content_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  @include phone-screen {
+    font-size: 24px;
+  }
+}
+
+.card {
+  width: 120px;
+  height: 140px;
+}
+
+.logo_img_wrapper {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.background_logo {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 50%;
+}

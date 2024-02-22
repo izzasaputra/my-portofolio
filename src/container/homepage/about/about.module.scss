@@ -1,0 +1,32 @@
+@import "../../../utils/reponsive.scss";
+
+.about_wrapper {
+  padding: 0 40px;
+  @include phone-screen {
+    padding: 0 20px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  @include phone-screen {
+    font-size: 24px;
+  }
+}
+
+.description {
+  font-size: 18px;
+  @include phone-screen {
+    font-size: 14px !important;
+  }
+}
+
+.sub_title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  @include phone-screen {
+    font-size: 20px;
+  }
+}

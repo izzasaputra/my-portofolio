@@ -25,21 +25,20 @@ export default function Navbar() {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{
-        duration: 3,
-        ease: "easeInOut",
-        type: "spring",
-      }}
-    >
+    <div>
       {screenType.mobile ? (
         <ResponsiveNavbar />
       ) : (
-        <div
+        <motion.div
           className={styles.navbar_container}
           style={{ backgroundColor: scrolled ? "black" : "transparent" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 3,
+            ease: "easeInOut",
+            type: "spring",
+          }}
         >
           <div className={styles.detail_menu}>
             {Menus.map((menu) => (
@@ -48,8 +47,8 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       )}
-    </motion.div>
+    </div>
   );
 }
