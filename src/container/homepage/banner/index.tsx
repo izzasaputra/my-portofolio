@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./homepage.module.scss";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "antd";
@@ -9,9 +9,23 @@ import {
   GithubOutlined,
 } from "@ant-design/icons";
 import { motion } from "framer-motion";
+import ConfirmationModal from "@/component/modal/confirmationModal";
 
 export default function Banner() {
-    return (
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  return (
     <motion.div
       className={styles.banner}
       initial={{ opacity: 0 }}
@@ -42,7 +56,9 @@ export default function Banner() {
               repeat={Infinity}
             />
           </div>
-          <Button className={styles.resume_button}>Resume</Button>
+          <Button className={styles.resume_button} onClick={showModal}>
+            Resume
+          </Button>
         </div>
         <div className={styles.social_media_container}>
           <div style={{ marginRight: "10px" }} className={styles.media_item}>
@@ -59,6 +75,11 @@ export default function Banner() {
           </div>
         </div>
       </div>
+      <ConfirmationModal
+        isModalOpen={isModalOpen}
+        handleOk={handleOk}
+        handleCancel={handleCancel}
+      />
     </motion.div>
   );
 }

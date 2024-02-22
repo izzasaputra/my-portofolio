@@ -9,12 +9,8 @@ export default function Home() {
     <main className={styles.main}>
       <Navbar />
       <Banner />
-      <div style={{ marginTop: "200px" }}>
-        <About />
-      </div>
-      <div style={{ marginTop: "200px" }}>
-        <Technology />
-      </div>
+      <About />
+      <Technology />
     </main>
   );
 }

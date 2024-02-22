@@ -2,13 +2,17 @@
 
 .about_wrapper {
   padding: 0 40px;
+  overflow: hidden !important;
+  margin-top: 200px;
   @include phone-screen {
     padding: 0 20px;
+    margin-top: 100px;
   }
 }
 
 .title {
-  font-size: 32px;
+  font-size: 45px;
+  font-weight: 600;
   margin-bottom: 10px;
   @include phone-screen {
     font-size: 24px;

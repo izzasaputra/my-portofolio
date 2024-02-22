@@ -18,7 +18,7 @@ export default function Technology() {
           <Row>
             {TechStack.map((tech) => (
               <React.Fragment key={tech.title}>
-                <Col xs={8} sm={3} lg={3}>
+                <Col xs={8} sm={3} lg={3} className={styles.col_card}>
                   <div className={styles.card}>
                     <div
                       className={` ${styles.logo_img_wrapper} ${

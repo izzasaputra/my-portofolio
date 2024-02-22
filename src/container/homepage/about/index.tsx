@@ -12,8 +12,8 @@ export default function About() {
   }, []);
 
   return (
-    <div className={styles.about_wrapper} data-aos="fade-up-left">
-      <Row>
+    <div className={styles.about_wrapper}>
+      <Row data-aos="fade-up-left">
         <Col xs={24} sm={12} lg={12}></Col>
         <Col xs={24} sm={12} lg={12}>
           <div className={styles.title}>Who am I?</div>
