@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <div className={styles.about_wrapper}>
-      {useScreen.mobile ? (
+      {!useScreen.desktop ? (
         <Row>
           <Col style={{ width: "100%" }}>
             <div
