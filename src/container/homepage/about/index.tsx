@@ -44,9 +44,10 @@ export default function About() {
               data-aos="fade-up-left"
               data-aos-delay="600"
             >
-              I'm Izza Saputra, an experienced developer known for my expertise
+              <p>I{"'"}m Izza Saputra, an experienced developer known for my expertise
               and innovation. With a proven track record, I specialize in
               crafting sleek user interfaces and robust backend solutions.
+              </p>
             </div>
           </Col>
         </Row>
@@ -66,7 +67,7 @@ export default function About() {
             data-aos="fade-up-left"
             data-aos-delay="900"
           >
-            I'm Izza Saputra, an experienced developer known for my expertise
+            I{"'"}m Izza Saputra, an experienced developer known for my expertise
             and innovation. With a proven track record, I specialize in crafting
             sleek user interfaces and robust backend solutions.
           </div>
@@ -86,7 +87,7 @@ export default function About() {
             data-aos="fade-up-right"
             data-aos-delay="900"
           >
-            Dedicated to delivering tailored excellence, I'm committed to
+            Dedicated to delivering tailored excellence, I{"'"}m committed to
             exceeding expectations and achieving outstanding results for every
             project.
           </div>
