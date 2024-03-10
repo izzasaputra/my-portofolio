@@ -34,9 +34,7 @@ export default function About() {
             data-aos-delay="500"
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
-            <Tilt>
-              <img src="/image/me.png" width="220" height="230" alt="" />
-            </Tilt>
+            <img src="/image/me.png" width="340" height="220" alt="" />
           </Col>
           <Col>
             <div
@@ -44,7 +42,7 @@ export default function About() {
               data-aos="fade-up-left"
               data-aos-delay="600"
             >
-              <p style={{color:"grey"}}>
+              <p style={{ color: "grey" }}>
                 I{"'"}m Izza Saputra, an experienced developer known for my
                 expertise and innovation. With a proven track record, I
                 specialize in crafting sleek user interfaces and robust backend
@@ -60,13 +58,13 @@ export default function About() {
           </Col>
           <Col
             sm={24}
-            md={8}
-            lg={8}
+            md={7}
+            lg={7}
             style={{
               width: 250,
               fontSize: "18px",
-              paddingLeft:"15%",
-              color:"grey"
+              paddingLeft: "10%",
+              color: "grey",
             }}
             data-aos="fade-up-left"
             data-aos-delay="900"
@@ -77,26 +75,24 @@ export default function About() {
           </Col>
           <Col
             sm={24}
-            md={8}
-            lg={8}
+            md={10}
+            lg={10}
             className={styles.photo}
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <Tilt>
-              <img src="/image/me.png" width="330" height="340" alt="" />
-            </Tilt>
+            <img src="/image/me_desktop.png" width="465" height="280" alt="" />
           </Col>
           <Col
             sm={24}
-            md={8}
-            lg={8}
+            md={7}
+            lg={7}
             style={{
               width: 250,
               fontSize: "18px",
-              paddingRight:"13%",
-              paddingTop:"15%",
-              color:"grey"
+              paddingRight: "9%",
+              paddingTop: "11%",
+              color: "grey",
             }}
             data-aos="fade-up-right"
             data-aos-delay="900"
