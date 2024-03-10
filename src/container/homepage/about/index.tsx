@@ -44,45 +44,59 @@ export default function About() {
               data-aos="fade-up-left"
               data-aos-delay="600"
             >
-              <p>I{"'"}m Izza Saputra, an experienced developer known for my expertise
-              and innovation. With a proven track record, I specialize in
-              crafting sleek user interfaces and robust backend solutions.
+              <p style={{color:"grey"}}>
+                I{"'"}m Izza Saputra, an experienced developer known for my
+                expertise and innovation. With a proven track record, I
+                specialize in crafting sleek user interfaces and robust backend
+                solutions.
               </p>
             </div>
           </Col>
         </Row>
       ) : (
-        <>
-          <div className={styles.title} data-aos="zoom-in">
+        <Row>
+          <Col sm={24} className={styles.title} data-aos="zoom-in">
             Who am I?
-          </div>
-          <div
+          </Col>
+          <Col
+            sm={24}
+            md={8}
+            lg={8}
             style={{
-              width: 300,
-              position: "absolute",
-              top: "160px",
-              left: "250px",
-              fontSize: "16px",
+              width: 250,
+              fontSize: "18px",
+              paddingLeft:"15%",
+              color:"grey"
             }}
             data-aos="fade-up-left"
             data-aos-delay="900"
           >
-            I{"'"}m Izza Saputra, an experienced developer known for my expertise
-            and innovation. With a proven track record, I specialize in crafting
-            sleek user interfaces and robust backend solutions.
-          </div>
-          <div className={styles.photo} data-aos="zoom-in" data-aos-delay="500">
+            I{"'"}m Izza Saputra, an experienced developer known for my
+            expertise and innovation. With a proven track record, I specialize
+            in crafting sleek user interfaces and robust backend solutions.
+          </Col>
+          <Col
+            sm={24}
+            md={8}
+            lg={8}
+            className={styles.photo}
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
             <Tilt>
               <Image src="/image/me.png" width="330" height="340" alt="" />
             </Tilt>
-          </div>
-          <div
+          </Col>
+          <Col
+            sm={24}
+            md={8}
+            lg={8}
             style={{
-              width: 300,
-              position: "absolute",
-              top: "400px",
-              right: "150px",
-              fontSize: "16px",
+              width: 250,
+              fontSize: "18px",
+              paddingRight:"13%",
+              paddingTop:"18%",
+              color:"grey"
             }}
             data-aos="fade-up-right"
             data-aos-delay="900"
@@ -90,8 +104,8 @@ export default function About() {
             Dedicated to delivering tailored excellence, I{"'"}m committed to
             exceeding expectations and achieving outstanding results for every
             project.
-          </div>
-        </>
+          </Col>
+        </Row>
       )}
     </div>
   );

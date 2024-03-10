@@ -13,7 +13,14 @@
       cursor: pointer;
     }
     .menu_item:hover {
-      font-weight: 600;
+      animation: shake 0.5s ease;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); } /* Bergeser ke kiri */
+      50% { transform: translateX(5px); } /* Bergeser ke kanan */
+      75% { transform: translateX(-5px); } /* Bergeser ke kiri */
+      100% { transform: translateX(0); }
     }
   }
 }
