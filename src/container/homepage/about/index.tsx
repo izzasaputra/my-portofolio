@@ -35,7 +35,7 @@ export default function About() {
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
             <Tilt>
-              <Image src="/image/me.png" width="220" height="230" alt="" />
+              <img src="/image/me.png" width="220" height="230" alt="" />
             </Tilt>
           </Col>
           <Col>
@@ -84,7 +84,7 @@ export default function About() {
             data-aos-delay="500"
           >
             <Tilt>
-              <Image src="/image/me.png" width="330" height="340" alt="" />
+              <img src="/image/me.png" width="330" height="340" alt="" />
             </Tilt>
           </Col>
           <Col
@@ -95,7 +95,7 @@ export default function About() {
               width: 250,
               fontSize: "18px",
               paddingRight:"13%",
-              paddingTop:"18%",
+              paddingTop:"15%",
               color:"grey"
             }}
             data-aos="fade-up-right"
